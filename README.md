@@ -1,5 +1,5 @@
 # vibe
-![](https://github.com/nostalgia-cnt/vibe/blob/main/assets/vive.gif?raw=true) 
+<center>![](https://github.com/nostalgia-cnt/vibe/blob/main/assets/vive.gif?raw=true)</center>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
