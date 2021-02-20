@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/badge/license-Apache%202-blue)](https://www.apache.org/licenses/LICENSE-2.0.html)
 </p>
 
-The VIBE API is an all-purpose eye tracking API for Alzheimer's disease research.
+The <strong>Vibe API</strong> is an all-purpose eye tracking API for Alzheimer's disease research.
 
 This was made on behalf of the 2021 CNT Hackathon at the [UW Center for Neurotechnology](http://www.csne-erc.org/).
 
