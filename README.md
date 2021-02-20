@@ -49,6 +49,12 @@ These tasks are elaborated upon in the demo below.
 ### Video watch task
 -- we selected a complicated video in black-and-white as a design consideration for AD and related disorders
 
+## Potential confounders
+It's of note that using eye tracking features for diagnosing AD can have multiple confounders including: 
+* <strong>Oculomotor abnormalities</strong> - Oculomotor abnormalities are not exclusive from AD and it is important to develop techniques that properly distinguish AD from other diseases. (e.g. Multiple System Atrophy has slower prosaccade and increased antisaccade errors)
+* <strong>Aging affects saccades</strong> - Furthermore, SEM abnormalities might be related to aging.d.
+* <strong>Less controlled setups </strong> - Many different setups can affect the recording of eye conditions including brightness, orientation of the face / angle, and ambient visual noise.
+
 ## Additional reading 
 - [eyelike](https://github.com/trishume/eyeLike)
 - [pupil](https://github.com/pupil-labs/pupil)
