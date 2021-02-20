@@ -18,6 +18,13 @@ This was made on behalf of the 2021 CNT Hackathon at the [UW Center for Neurotec
 
 ## Problem
 
+- Alzheimer's disease affects > worldwide. 
+- The diagnosis occurs frequently at late stages of the disease, when symptoms are evident. 
+- AD is present up to 20 years before the disease is manifested. 
+- Treatment is helpful to delay the progression and improve quality of life. 
+- There is a strong need for early diagnosis to improve treatment outcomes. 
+- [MMSE exam](http://www.fammed.usouthal.edu/Guides%26JobAids/Geriatric/MMSE.pdf) is the current gold standard to diagnose MCI and dementia; it takes >50 minutes and requires an expert, which limits the ubiquity of AD screening in the population
+
 ## Eye tracking 
 Background research
 - need for something to work on webcams
