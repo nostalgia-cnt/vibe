@@ -29,6 +29,7 @@ This was made on behalf of the 2021 CNT Hackathon at the [UW Center for Neurotec
 Read the review article on eye tracking research for AD [here](https://www.hindawi.com/journals/cmmm/2018/2676409/).
 
 Below are several studies that indicate the effectiveness of using visual biomarkers for characterizing Alzheimer's disease, MCI, and controls:
+
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/assets/Screen%20Shot%202021-02-20%20at%205.25.43%20PM.png)
 
 ## Tasks
