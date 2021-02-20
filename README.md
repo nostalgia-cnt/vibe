@@ -1,4 +1,6 @@
 # vibe
+![](https://github.com/nostalgia-cnt/vibe/blob/main/assets/vive.gif?raw=true) 
+
 The VIBE API is an all-purpose eye tracking API for Alzheimer's disease research.
 
 This was made on behalf of the 2021 CNT Hackathon at the [UW Center for Neurotechnology](http://www.csne-erc.org/).
