@@ -26,8 +26,9 @@ This was made on behalf of the 2021 CNT Hackathon at the [UW Center for Neurotec
 - [MMSE exam](http://www.fammed.usouthal.edu/Guides%26JobAids/Geriatric/MMSE.pdf) is the current gold standard to diagnose MCI and dementia; it takes >50 minutes and requires an expert, which limits the ubiquity of AD screening in the population
 
 ## Eye tracking 
-Background research
-- need for something to work on webcams
+Read the review article on eye tracking research for AD [here](https://www.hindawi.com/journals/cmmm/2018/2676409/).
+
+Below are several studies that indicate the effectiveness of using visual biomarkers for characterizing Alzheimer's disease, MCI, and controls:
 
 ## Tasks
 Describe tasks here.
