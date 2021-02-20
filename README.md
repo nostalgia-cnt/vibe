@@ -1,7 +1,7 @@
 # vibe
-<img align="center">
+<center>
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/assets/vive.gif?raw=true)
-</img>
+</center>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Python](https://img.shields.io/badge/python-v3.6+-blue.svg)](https://github.com/jim-schwoebel/allie/blob/master/Dockerfile)
