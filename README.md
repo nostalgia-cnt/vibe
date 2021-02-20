@@ -51,9 +51,9 @@ These tasks are elaborated upon in the demo below.
 
 ## Potential confounders
 It's of note that using eye tracking features for diagnosing AD can have multiple confounders including: 
-* <strong>Oculomotor abnormalities</strong> - Oculomotor abnormalities are not exclusive from AD and it is important to develop techniques that properly distinguish AD from other diseases. (e.g. Multiple System Atrophy has slower prosaccade and increased antisaccade errors)
-* <strong>Aging affects saccades</strong> - Furthermore, SEM abnormalities might be related to aging.d.
-* <strong>Less controlled setups </strong> - Many different setups can affect the recording of eye conditions including brightness, orientation of the face / angle, and ambient visual noise.
+* <strong>Oculomotor abnormalities</strong> - Oculomotor abnormalitie may exist in other diseases and so algorithms may have false positives if these diseases are not screened out at onset of the screen (e.g. Multiple System Atrophy has slower prosaccade and increased antisaccade errors)
+* <strong>Aging affects saccades</strong> - Eyesight is affecting as you age (e.g. visual acuity changes to have worse vision), as well as reaction time, and so these things may bias or confound any diagnostic marker for the eyes; this is very similar to confounds that exist in other areas like vocal biomarker research studies.
+* <strong>Less controlled setups </strong> - Many different setups can affect the recording of eye conditions including brightness, corrective lenses, orientation of the face / angle, and ambient visual noise.
 
 ## Additional reading 
 - [eyelike](https://github.com/trishume/eyeLike)
