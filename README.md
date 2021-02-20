@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://github.com/nostalgia-cnt/vibe/blob/main/assets/vibe.gif?raw=true">
-</p>
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Python](https://img.shields.io/badge/python-v3.6+-blue.svg)](https://github.com/jim-schwoebel/allie/blob/master/Dockerfile)
@@ -10,6 +10,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/anfederico/Clairvoyant.svg)](https://github.com/jim-schwoebel/allie/issues)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)](https://github.com/jim-schwoebel/allie/projects)
 [![License](https://img.shields.io/badge/license-Apache%202-blue)](https://www.apache.org/licenses/LICENSE-2.0.html)
+</p>
 
 The VIBE API is an all-purpose eye tracking API for Alzheimer's disease research.
 
