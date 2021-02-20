@@ -49,6 +49,12 @@ These tasks are elaborated upon in the demo below.
 ### Video watch task
 -- we selected a complicated video in black-and-white as a design consideration for AD and related disorders
 
+## Feature extraction pipeline
+
+Here are the features that are outputted in every frame.
+- mean fixation duration, fixation count, and mean saccade amplitude. 
+
+
 ## Potential confounders
 It's of note that using eye tracking features for diagnosing AD can have multiple confounders including: 
 * <strong>Oculomotor abnormalities</strong> - Oculomotor abnormalitie may exist in other diseases and so algorithms may have false positives if these diseases are not screened out at onset of the screen (e.g. Multiple System Atrophy has slower prosaccade and increased antisaccade errors)
