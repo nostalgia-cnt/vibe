@@ -31,6 +31,23 @@ Background research
 
 ## Tasks
 Describe tasks here.
+Proposed here are 3 explicit tasks used to baseline AD and related disorders:
+- picture task 
+- sentence reading task
+- video task 
+
+These tasks are elaborated upon in the demo below.
+
+### Picture task
+-- black and white pictures were selected to prevent color from affecting the stimulus 
+-- images licensed under creative common license using Google search
+
+### Sentence reading task
+-- reading sentences has been shown to correlate with AD in the eyes and also in the voice
+-- Grandfather passage is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population.
+
+### Video watch task
+-- we selected a complicated video in black-and-white as a design consideration for AD and related disorders
 
 ## Additional reading 
 - [eyelike](https://github.com/trishume/eyeLike)
