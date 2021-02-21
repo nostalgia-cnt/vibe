@@ -70,6 +70,15 @@ Here are the features that are outputted in every frame.
 - mean fixation duration, fixation count, and mean saccade amplitude. 
 
 
+## Contributors
+
+- Keaton Armentrout
+- Jim Schwoebel
+- Pamel
+- Jayant
+
+If you'd like to contribute, feel free to make a branch/PR!
+
 ## Potential confounders
 It's of note that using eye tracking features for diagnosing AD can have multiple confounders including: 
 * <strong>Oculomotor abnormalities</strong> - Oculomotor abnormalitie may exist in other diseases and so algorithms may have false positives if these diseases are not screened out at onset of the screen (e.g. Multiple System Atrophy has slower prosaccade and increased antisaccade errors)
