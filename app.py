@@ -1,4 +1,4 @@
-import os, random
+import os, random, json
 
 from flask import (
     Flask,
@@ -36,7 +36,6 @@ app.config['PROCESSED_FOLDER'] = curdir + '/published'
 app.config['MAX_CONTENT_LENGTH'] = 8 * 1024 * 1024 * 2
 curdir = os.getcwd()
 
-
 app.add_url_rule('/published/<filename>', 'uploaded_file', build_only=True)
 app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
     '/published': app.config['PROCESSED_FOLDER'],
@@ -49,7 +48,6 @@ os.makedirs('published', exist_ok=True)
 def serve_front():
     base_url = request.base_url
     return render_template('index.html', url=base_url)
-
 
 @app.route('/templates/<sessionid>', methods=['GET'])
 def templates(sessionid):
@@ -66,13 +64,11 @@ def picture(sessionid):
     # edit the session with .JSON data (post)
     return render_template('picture.html', base_url=base_url)
 
-
 @app.route('/video/<sessionid>', methods=['GET'])
 def video(sessionid):
     base_url = request.base_url
     # edit the session with .JSON data (post)
     return render_template('video.html', base_url=base_url)
-
 
 @app.route('/sentence/<sessionid>', methods=['GET'])
 def sentence(sessionid):
@@ -95,11 +91,32 @@ def video_feed():
     base_url = request.base_url
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/api', methods=["POST"])
-def api_features():
-    response = request.get_json()
-    print(response)
-    return jsonify(response)
+@app.route('/api/<task>', methods=["POST"])
+def api_features(task):
+    data = request.get_json()
+    print(data)
+
+    # write database to .json
+    curdir=os.getcwd()
+    session=data['sessionId']
+    os.chdir(app.config['UPLOAD_FOLDER'])
+    try:
+        os.mkdir(session)
+        os.chdir(session)
+    except:
+        os.chdir(session)
+
+    jsonfilename='%s.json'%(task)
+    if jsonfilename not in os.listdir():
+        jsonfile=open(jsonfilename,'w')
+        json.dump(data,jsonfile)
+        jsonfile.close()
+    else:
+        print('FILE EXISTS - ' + jsonfilename)
+        
+    os.chdir(curdir)
+
+    return jsonify(data)
 
 @app.after_request
 def add_headers(response):

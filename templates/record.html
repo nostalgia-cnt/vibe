@@ -48,14 +48,59 @@
 <div class="container">
     <div class="row" style="align-content: center">
         <div class="col-lg-8  offset-lg-2">
-            <h3 class="mt-5">Baseline</h3>
+            <center>
+            
+            <h3 id='baseline' class="mt-5">Baseline</h3>
+            
+            <!-- 
+            Video feed to left of user.
+            --> 
             {#<img src="{{url}} +'/video_feed">#}
-            <button id="start_button" onclick="startSession(15)">Begin Session</button>
+
+            <!-- 
+            This will start the session and baseline the user. 
+            --> 
+            <button id="start_baseline" onclick='startSession(15,"baseline",sessionid)'>Begin Session</button>
+            <!-- 
+            This will start the picture task.
+            --> 
+            <button id="start_image" onclick='startSession(10, "image",sessionid)' style="display:none">Start image task</button>
+            <!-- 
+            This will start the video task.
+            --> 
+            <button id="start_video" onclick='startSession(20, "video",sessionid)' style="display:none">Start video task</button>
+            <!-- 
+            This will start the sentence reading task.
+            --> 
+            <button id="start_text" onclick='startSession(45, "text", sessionid)' style="display:none">Start text task</button>
+
+            <p id="text" style="color:black;font-size:30px; display:none">
+                <strong> Please read the following passage: </strong> 
+                </br></br>
+                “You wish to know all about my grandfather. Well, he is nearly 93 years old, yet he still thinks as swiftly as ever. He dresses himself in an old black frock coat, usually several buttons missing. A long beard clings to his chin, giving those who observe him a pronounced feeling of the utmost respect. When he speaks, his voice is just a bit cracked and quivers a bit. Twice each day he plays skillfully and with zest upon a small organ. Except in the winter when the snow or ice prevents, he slowly takes a short walk in the open air each day. We have often urged him to walk more and smoke less, but he always answers, “Banana oil!” Grandfather likes to be modern in his language.”
+            </br></br> 
+            </p>
+            
+            <table id='image' style="width:100%; display:none">
+                <tr>
+                    <th><img src='../static/pictures/rooster.png' height=300px></img></th>
+                    <th><img src='../static/pictures/tree.png' height=300px></img></th>
+                </tr>
+            </table>
+            
+            <video loop id='video' width="700" height="700" style="display:none;">
+                <source src="../static/videos/walking.mp4" type="video/mp4"/>  		
+                Your Browser does not support the video element
+            </center> 
+            
         </div>
     </div>
     <p id="demo"></p>
 </div>
 </body>
+
+</br>
+
 
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -157,18 +202,40 @@
       });
     }
 
-    function startSession(recordingTime) {
+    // create a session id
+    sessionid=uuidv4();
+
+   function startSession(recordingTime, task, sessionid) {
         // Start data collection
         webgazer.resume();
-        console.log("starting webgazer");
+        console.log("starting webgazer - " + task);
 
-        var downloadTimer = setInterval(function(){
+        if(task == 'baseline') {
+            document.getElementById('baseline').style.display='block';
+        } else if(task=='text'){
+            document.getElementById('text').style.display='block';
+        } else if(task=='image'){
+            document.getElementById('image').style.display='block';
+        } else if(task=='video'){
+            document.getElementById('video').style.display='block';
+        }
+        // document.getElementById('baseline').style.display='block';
+        // document.getElementById('baseline').style.display='none';
+
+        // document.getElementById('text').style.display='block';
+        // document.getElementById('text').style.display='none';
+
+        // document.getElementById('image').style.display='block';
+        // document.getElementById('image').style.display='none';
+
+        // document.getElementById('video').style.display='block';
+        // document.getElementById('image').style.display='none';
+
+        if(task == 'baseline') {
+            var downloadTimer = setInterval(function(){
             if(recordingTime <= 0){
                 // Stop data collection and handle data
                 webgazer.pause();
-
-                // create a session id
-                sessionid=uuidv4();
 
                 // store browser information
                 browser_data= {'browserName': browserName,
@@ -178,7 +245,7 @@
                                 'userAgent':navigator.userAgent}
 
                 all_data={"sessionId": sessionid, 
-                          "url": "{{url}}/api/",
+                          "url": "{{url}}/api/baseline",
                           "date": new Date().toLocaleString(), 
                           "browser_data": browser_data, 
                           "data": predictionData,
@@ -189,7 +256,56 @@
                 // possibly via jquery POST or something
                 $("document").ready(function(){
                     $.ajax({
-                        url: "{{url}}/api",
+                        url: "{{url}}/api/baseline",
+                        type: "POST",
+                        contentType: "application/json",
+                        data: JSON.stringify(all_data)
+                    })
+                });
+                // For whatever reason, this isn't working - no data is being collected here unless
+                // the webgazer object is initialized and starts recording right away. Huh.
+                console.log(predictionData);
+
+                // Finally, stop the timer
+                clearInterval(downloadTimer);
+                
+                predictionData = [];
+                document.getElementById('baseline').style.display='none';
+                document.getElementById('start_text').style.display='none';
+                document.getElementById('start_baseline').style.display='none';
+                document.getElementById('start_image').style.display='block';
+                document.getElementById('start_video').style.display='none';
+
+            }
+            document.getElementById("demo").innerHTML = recordingTime;
+            recordingTime -= 1;
+        }, 1000);
+        } else if(task == 'image'){
+            downloadTimer = setInterval(function(){
+            if(recordingTime <= 0){
+                // Stop data collection and handle data
+                webgazer.pause();
+
+                // store browser information
+                browser_data= {'browserName': browserName,
+                                'fullVersion': fullVersion,
+                                'majorVersion': majorVersion,
+                                'appName':navigator.appName,
+                                'userAgent':navigator.userAgent}
+
+                all_data={"sessionId": sessionid, 
+                          "url": "{{url}}/api/image",
+                          "date": new Date().toLocaleString(), 
+                          "browser_data": browser_data, 
+                          "data": predictionData,
+                          "gender": "{{gender}}",
+                          "age": "{{age}}"}
+                          
+                // Send predictionData to backend somehow
+                // possibly via jquery POST or something
+                $("document").ready(function(){
+                    $.ajax({
+                        url: "{{url}}/api/image",
                         type: "POST",
                         contentType: "application/json",
                         data: JSON.stringify(all_data)
@@ -201,12 +317,111 @@
 
                 // Finally, stop the timer
                 clearInterval(downloadTimer);
+                predictionData = [];
+
+                document.getElementById('image').style.display='none';
+                document.getElementById('start_text').style.display='none';
+                document.getElementById('start_baseline').style.display='none';
+                document.getElementById('start_image').style.display='none';
+                document.getElementById('start_video').style.display='block';
+            }
+            document.getElementById("demo").innerHTML = recordingTime;
+            recordingTime -= 1;
+        }, 1000);
+        } else if(task == 'video'){
+            downloadTimer = setInterval(function(){
+            if(recordingTime <= 0){
+                // Stop data collection and handle data
+                webgazer.pause();
+
+                // store browser information
+                browser_data= {'browserName': browserName,
+                                'fullVersion': fullVersion,
+                                'majorVersion': majorVersion,
+                                'appName':navigator.appName,
+                                'userAgent':navigator.userAgent}
+
+                all_data={"sessionId": sessionid, 
+                          "url": "{{url}}/api/video",
+                          "date": new Date().toLocaleString(), 
+                          "browser_data": browser_data, 
+                          "data": predictionData,
+                          "gender": "{{gender}}",
+                          "age": "{{age}}"}
+                          
+                // Send predictionData to backend somehow
+                // possibly via jquery POST or something
+                $("document").ready(function(){
+                    $.ajax({
+                        url: "{{url}}/api/video",
+                        type: "POST",
+                        contentType: "application/json",
+                        data: JSON.stringify(all_data)
+                    })
+                });
+                // For whatever reason, this isn't working - no data is being collected here unless
+                // the webgazer object is initialized and starts recording right away. Huh.
+                // console.log(predictionData);
+
+                // Finally, stop the timer
+                clearInterval(downloadTimer);
+                predictionData = [];
+                
+                document.getElementById('video').style.display='none';
+                document.getElementById('start_text').style.display='block';
+                document.getElementById('start_baseline').style.display='none';
+                document.getElementById('start_image').style.display='none';
+                document.getElementById('start_video').style.display='none';
+            }
+            document.getElementById("demo").innerHTML = recordingTime;
+            recordingTime -= 1;
+        }, 1000);
+        } else if(task == 'text'){
+            downloadTimer = setInterval(function(){
+            if(recordingTime <= 0){
+                // Stop data collection and handle data
+                webgazer.pause();
+
+                // store browser information
+                browser_data= {'browserName': browserName,
+                                'fullVersion': fullVersion,
+                                'majorVersion': majorVersion,
+                                'appName':navigator.appName,
+                                'userAgent':navigator.userAgent}
+
+                all_data={"sessionId": sessionid, 
+                          "url": "{{url}}/api/text",
+                          "date": new Date().toLocaleString(), 
+                          "browser_data": browser_data, 
+                          "data": predictionData,
+                          "gender": "{{gender}}",
+                          "age": "{{age}}"}
+                          
+                // Send predictionData to backend somehow
+                // possibly via jquery POST or something
+                $("document").ready(function(){
+                    $.ajax({
+                        url: "{{url}}/api/text",
+                        type: "POST",
+                        contentType: "application/json",
+                        data: JSON.stringify(all_data)
+                    })
+                });
+                // For whatever reason, this isn't working - no data is being collected here unless
+                // the webgazer object is initialized and starts recording right away. Huh.
+                // console.log(predictionData);
+
+                // Finally, stop the timer
+                clearInterval(downloadTimer);
+                
+                predictionData = [];
                 window.location.replace("{{url}}"+'/loading/'+sessionid);
             }
             document.getElementById("demo").innerHTML = recordingTime;
             recordingTime -= 1;
         }, 1000);
-    }
+        } 
+}
 </script>
 
 <section class="menu menu2 cid-spC6buRFV8" once="menu" id="menu2-5">
