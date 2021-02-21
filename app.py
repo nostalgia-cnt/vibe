@@ -51,11 +51,10 @@ def serve_front():
     return render_template('index.html', url=base_url)
 
 
-@app.route('/templates', methods=['GET'])
-def templates():
-    base_url = request.base_url.replace('/templates', '')
-    return render_template('templates.html', url=base_url)
-
+@app.route('/templates/<sessionid>', methods=['GET'])
+def templates(sessionid):
+    base_url = request.base_url.split('/templates')[0]
+    return render_template('templates.html', url=base_url, sessionid=sessionid)
 
 @app.route('/record/<age>/<gender>', methods=['GET'])
 def record_session(age, gender, base_url):
