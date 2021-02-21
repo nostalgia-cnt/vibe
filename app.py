@@ -83,16 +83,20 @@ def calibration():
     # base_url = request.base_url
     return render_template('calibration.html')
 
+@app.route('/loading/<sessionid>', methods=['GET'])
+def loading(sessionid):
+    base_url = request.base_url
+    return render_template('loading.html', url=base_url, session=sessionid)
+
 @app.route('/video_feed', methods=['GET'])
 def video_feed():
     base_url = request.base_url
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 @app.route('/api', methods=["POST"])
-def main_interface():
+def api_features():
     response = request.get_json()
     print(response)
-
     return jsonify(response)
 
 @app.after_request

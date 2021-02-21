@@ -201,7 +201,7 @@
 
                 // Finally, stop the timer
                 clearInterval(downloadTimer);
-                window.location.replace("{{url}}"+'/templates/'+sessionid);
+                window.location.replace("{{url}}"+'/loading/'+sessionid);
             }
             document.getElementById("demo").innerHTML = recordingTime;
             recordingTime -= 1;
