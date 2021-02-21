@@ -57,11 +57,9 @@ def templates():
     return render_template('templates.html', url=base_url)
 
 
-@app.route('/record', methods=['GET'])
-def record_audio():
-    base_url = request.base_url.replace('/record', '')
-    return render_template('record.html', base_url=base_url)
-
+@app.route('/record/<age>/<gender>', methods=['GET'])
+def record_session(age, gender, base_url):
+    return render_template('record.html', base_url=base_url, age=age, gender=gender)
 
 @app.route('/picture', methods=['GET'])
 def picture():
@@ -95,6 +93,7 @@ def video_feed():
 def main_interface():
     response = request.get_json()
     print(response)
+
     return jsonify(response)
 
 @app.after_request
@@ -128,7 +127,7 @@ def index():
         age = request.form['age']
         gender = request.form['gender']
 
-        return render_template('record.html')
+        return render_template('record.html', age=age, gender=gender, url=base_url)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=5000, ssl_context=('adhoc'))
