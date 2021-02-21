@@ -26,7 +26,7 @@ cd vibe
 python3 app.py
 ```
 
-Now go to 0.0.0.0:5000 in browser and proceed and can see what has been done so far.
+Now go to ```https://0.0.0.0:5000/``` in browser and proceed and can see what has been done so far.
 
 ## Problem
 
