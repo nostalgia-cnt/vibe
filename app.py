@@ -60,23 +60,25 @@ def templates(sessionid):
 def record_session(age, gender, base_url):
     return render_template('record.html', base_url=base_url, age=age, gender=gender)
 
-@app.route('/picture', methods=['GET'])
-def picture():
+@app.route('/picture/<sessionid>', methods=['GET'])
+def picture(sessionid):
     base_url = request.base_url
+    # edit the session with .JSON data (post)
     return render_template('picture.html', base_url=base_url)
 
 
-@app.route('/video', methods=['GET'])
-def video():
+@app.route('/video/<sessionid>', methods=['GET'])
+def video(sessionid):
     base_url = request.base_url
+    # edit the session with .JSON data (post)
     return render_template('video.html', base_url=base_url)
 
 
-@app.route('/sentence', methods=['GET'])
-def sentence():
+@app.route('/sentence/<sessionid>', methods=['GET'])
+def sentence(sessionid):
     base_url = request.base_url
+    # edit the session with .JSON data (post)
     return render_template('sentence.html', base_url=base_url)
-
 
 @app.route('/calibration', methods=['GET'])
 def calibration():
