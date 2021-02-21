@@ -42,15 +42,15 @@ Proposed here are 3 explicit tasks used to baseline AD and related disorders:
 These tasks are elaborated upon in the demo below.
 
 ### Picture task
-- black and white pictures were selected to prevent color from affecting the stimulus 
-- images licensed under creative common license using Google search
+-- black and white pictures were selected to prevent color from affecting the stimulus 
+-- images licensed under creative common license using Google search
 
 ### Sentence reading task
-- reading sentences has been shown to correlate with AD in the eyes and also in the voice
-- Grandfather passage is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population.
+-- reading sentences has been shown to correlate with AD in the eyes and also in the voice
+-- Grandfather passage is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population.
 
 ### Video watch task
-- we selected a complicated video in black-and-white as a design consideration for AD and related disorders
+-- we selected a complicated video in black-and-white as a design consideration for AD and related disorders
 
 ## Feature extraction pipeline
 
@@ -63,14 +63,6 @@ It's of note that using eye tracking features for diagnosing AD can have multipl
 * <strong>Oculomotor abnormalities</strong> - Oculomotor abnormalitie may exist in other diseases and so algorithms may have false positives if these diseases are not screened out at onset of the screen (e.g. Multiple System Atrophy has slower prosaccade and increased antisaccade errors)
 * <strong>Aging affects saccades</strong> - Eyesight is affecting as you age (e.g. visual acuity changes to have worse vision), as well as reaction time, and so these things may bias or confound any diagnostic marker for the eyes; this is very similar to confounds that exist in other areas like vocal biomarker research studies.
 * <strong>Less controlled setups </strong> - Many different setups can affect the recording of eye conditions including brightness, corrective lenses, orientation of the face / angle, and ambient visual noise.
-
-## Acknowledgements
-
-Thank you so much for the [UW Center for Neurotechnology](http://www.csne-erc.org/) for sponsoring such an awesome Hack-a-thon! 
-
-We would not have been able to do this project without your support and sponsorship. 
-
-You brought our team together and made this an enjoyable process to build this project.
 
 ## Additional reading 
 - [eyelike](https://github.com/trishume/eyeLike)

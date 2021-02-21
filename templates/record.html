@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <h3 class="mt-5">Live Streaming</h3>
+            <img src="{{url}} +'/video_feed" width="100%">
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var seconds = Math.floor((distance % (1000 * 10)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = seconds;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<p id="demo"></p>
+
+<script src="https://webgazer.cs.brown.edu/webgazer.js?" type="text/javascript" >  
+webgazer.setGazeListener(function(data, elapsedTime) {
+if (data == null) {
+  return;
+}
+var x_prediction = data.x; //these x coordinates are relative to the viewport
+var y_prediction = data.y; //these y coordinates are relative to the viewport
+console.log(elapsedTime); //elapsed time is based on time since begin was called
+}).begin();
+  
+var prediction = webgazer.getCurrentPrediction();
+if (prediction) {
+var x_pred = prediction.x;
+var y_pred = prediction.y;
+}
+
+webgazer.setTracker("clmtrackr"); //set a tracker module
+webgazer.addTrackerModule("newTracker", NewTrackerConstructor); //add a new tracker module
+
+</script>
+
+  
+</body>
+</html>
