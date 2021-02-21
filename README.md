@@ -21,8 +21,8 @@ This was made on behalf of the 2021 CNT Hackathon at the [UW Center for Neurotec
 This will run everything in localhost to show you the demo:
 
 ```
-git clone https://github.com/nostalgia-cnt/vibe/blob/main/app.py
-cd 
+git clone git@github.com:nostalgia-cnt/vibe.git
+cd vibe
 python3 app.py
 ```
 
