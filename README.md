@@ -66,7 +66,11 @@ It's of note that using eye tracking features for diagnosing AD can have multipl
 
 ## Acknowledgements
 
-Thank you so much for the [UW Center for Neurotechnology](http://www.csne-erc.org/) for sponsoring such an awesome Hack-a-thon! We would not have been able to do this project without your support and sponsorship. You brought our team together and made this an enjoyable process to build this project.
+Thank you so much for the [UW Center for Neurotechnology](http://www.csne-erc.org/) for sponsoring such an awesome Hack-a-thon! 
+
+We would not have been able to do this project without your support and sponsorship. 
+
+You brought our team together and made this an enjoyable process to build this project.
 
 ## Additional reading 
 - [eyelike](https://github.com/trishume/eyeLike)
