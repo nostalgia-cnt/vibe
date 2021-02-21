@@ -1,38 +1,22 @@
-import os
-import random
+import os, random
 
 from flask import (
     Flask,
     render_template,
     request,
     Response,
+    jsonify
 )
 from werkzeug.middleware.shared_data import SharedDataMiddleware
 
-
-def get_random_folder():
-    listdir = os.listdir()
-    folders = list()
-    for i in range(len(listdir)):
-        if listdir[i].find('.') < 0:
-            folders.append(listdir[i])
-    return random.choice(folders)
-
-
-def get_giphy():
-    listdir = os.listdir()
-    for i in range(len(listdir)):
-        if listdir[i].endswith('.mp4'):
-            return listdir[i]
-
-
-# set some helper functions
-def allowed_file(filename):
-    return filename.endswith('.wav')
-
-
 # def video_feed():
 # return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+# camera = cv2.VideoCapture(0)
+'''
+for ip camera use - rtsp://username:password@ip_address:554/user=username_password='password'_channel=channel_number_stream=0.sdp' 
+for local webcam use cv2.VideoCapture(0)
+'''
 
 # configuration steps for Flask
 # load the model 
@@ -54,13 +38,6 @@ app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
 
 os.makedirs('upload', exist_ok=True)
 os.makedirs('published', exist_ok=True)
-
-# camera = cv2.VideoCapture(0)
-'''
-for ip camera use - rtsp://username:password@ip_address:554/user=username_password='password'_channel=channel_number_stream=0.sdp' 
-for local webcam use cv2.VideoCapture(0)
-'''
-
 
 @app.route('/', methods=['GET'])
 def serve_front():
@@ -109,6 +86,17 @@ def video_feed():
     base_url = request.base_url
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
+@app.route('/api/', methods=["POST"])
+def main_interface():
+    response = request.get_json()
+    print(response)
+    return jsonify(response)
+
+@app.after_request
+def add_headers(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    return response
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=5000, ssl_context=('adhoc'))
