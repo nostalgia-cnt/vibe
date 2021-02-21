@@ -64,6 +64,10 @@ It's of note that using eye tracking features for diagnosing AD can have multipl
 * <strong>Aging affects saccades</strong> - Eyesight is affecting as you age (e.g. visual acuity changes to have worse vision), as well as reaction time, and so these things may bias or confound any diagnostic marker for the eyes; this is very similar to confounds that exist in other areas like vocal biomarker research studies.
 * <strong>Less controlled setups </strong> - Many different setups can affect the recording of eye conditions including brightness, corrective lenses, orientation of the face / angle, and ambient visual noise.
 
+## Acknowledgements
+
+Thank you so much for the [UW Center for Neurotechnology](http://www.csne-erc.org/) for sponsoring such an awesome Hack-a-thon! We would not have been able to do this project without your support and sponsorship. You brought our team together and made this an enjoyable process to build this project.
+
 ## Additional reading 
 - [eyelike](https://github.com/trishume/eyeLike)
 - [pupil](https://github.com/pupil-labs/pupil)
