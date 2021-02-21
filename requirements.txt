@@ -10,3 +10,5 @@ image==1.5.33
 opencv-python==4.4.0.46
 pyopenssl==20.0.1
 waitress==1.4.4
+wtforms==2.3.3
+

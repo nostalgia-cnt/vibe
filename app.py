@@ -5,9 +5,14 @@ from flask import (
     render_template,
     request,
     Response,
-    jsonify
+    jsonify,
+    flash,
 )
 from werkzeug.middleware.shared_data import SharedDataMiddleware
+from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField, SelectField
+from flask_wtf import Form
+from wtforms import StringField, SubmitField
+from wtforms.validators import Required
 
 # def video_feed():
 # return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
@@ -25,6 +30,7 @@ app = Flask(__name__, template_folder='templates', static_folder='static')
 
 curdir = os.getcwd()
 app.config['BASE_FOLDER'] = curdir
+app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 app.config['UPLOAD_FOLDER'] = curdir + '/upload'
 app.config['PROCESSED_FOLDER'] = curdir + '/published'
 app.config['MAX_CONTENT_LENGTH'] = 8 * 1024 * 1024 * 2
@@ -80,13 +86,12 @@ def calibration():
     # base_url = request.base_url
     return render_template('calibration.html')
 
-
 @app.route('/video_feed', methods=['GET'])
 def video_feed():
     base_url = request.base_url
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/api/', methods=["POST"])
+@app.route('/api', methods=["POST"])
 def main_interface():
     response = request.get_json()
     print(response)
@@ -97,6 +102,33 @@ def add_headers(response):
     response.headers.add('Access-Control-Allow-Origin', '*')
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
     return response
+
+class NameForm(Form):
+    age = StringField('What is your age?', validators=[Required()])
+    gender = SelectField(choices=[('male', 'Male'), ('female', 'Female')])
+    submit = SubmitField('Next')
+
+@app.route('/register', methods=['GET', 'POST'])
+# taken from https://www.oreilly.com/library/view/flask-web-development/9781491947586/ch04.html
+# docs: https://wtforms.readthedocs.io/en/2.3.x/fields/
+def index():
+    base_url = request.base_url.replace('/register','')
+
+    if request.method == 'GET':
+        age = None
+        gender = None
+        form = NameForm()
+        if form.validate_on_submit():
+            age = form.age.data
+            gender = form.gender.data
+
+        return render_template('register.html', form=form, age=age, url=base_url)
+
+    elif request.method == 'POST':
+        age = request.form['age']
+        gender = request.form['gender']
+
+        return render_template('record.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=5000, ssl_context=('adhoc'))
