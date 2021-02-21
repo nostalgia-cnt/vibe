@@ -16,6 +16,18 @@ The <strong>Vibe API</strong> is an all-purpose eye tracking API for Alzheimer's
 
 This was made on behalf of the 2021 CNT Hackathon at the [UW Center for Neurotechnology](http://www.csne-erc.org/).
 
+## Getting started
+
+This will run everything in localhost to show you the demo:
+
+```
+git clone 
+cd 
+python3 app.py
+```
+
+Now go to 0.0.0.0:5000 in browser and proceed and can see what has been done so far.
+
 ## Problem
 
 - Alzheimer's disease affects > worldwide. 
