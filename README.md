@@ -100,6 +100,6 @@ The most commonly used screening tools for AD diagnosis:
 
 Tasks:
 * [The Grandfather passage](https://www.amyspeechlanguagetherapy.com/uploads/7/5/7/4/7574967/grandfatherpassage.pdf)
-* [Image - rooster]()
-* [Image - tree]()
+* [Image - rooster](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/rooster.png)
+* [Image - tree](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/tree.png)
 * [Video](https://github.com/nostalgia-cnt/vibe/blob/main/static/videos/walking.mp4)
