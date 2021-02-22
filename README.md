@@ -47,6 +47,8 @@ According to the World Health Organization (WHO), a new case of dementia is diag
 ## Solution: eye tracking biomarkers
 Eye tracking has emerged as a low-cost, noninvasive tool to diganose and track Alzheimer's disease symptoms.
 
+Eye movements and pupillary reflex have been used for several decades in neurological disease research. Careful examination of both allows to probe the medial temporal lobe memory system, the cholinergic neuronal pathways, the progressive neuropathological changes within the newcortex, and the brain dopamine activity.
+
 Below are several studies that indicate the effectiveness of using visual biomarkers for characterizing Alzheimer's disease, MCI, and controls:
 
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/assets/Screen%20Shot%202021-02-20%20at%205.25.43%20PM.png)
@@ -114,6 +116,7 @@ Some other repositorities that you may like to look into include:
 Research papers that are useful in the space include:
 * [Review article on eye tracking research for AD](https://www.hindawi.com/journals/cmmm/2018/2676409/)
 * [Nature - eye tracking datasets](https://www.nature.com/articles/sdata2016126)
+* [Nature - digital biomarkers for Alzheimer's disease](https://www.nature.com/articles/s41746-019-0084-2)
 
 The most commonly used screening tools for AD diagnosis:
 * [MMSE](https://cgatoolkit.ca/Uploads/ContentDocuments/MMSE.pdf)
