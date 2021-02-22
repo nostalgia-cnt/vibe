@@ -47,7 +47,7 @@ According to the World Health Organization (WHO), a new case of dementia is diag
 ## Solution: eye tracking biomarkers
 Eye tracking has emerged as a low-cost, noninvasive tool to diganose and track Alzheimer's disease symptoms.
 
-Eye movements and pupillary reflex have been used for several decades in neurological disease research. Careful examination of both allows to probe the medial temporal lobe memory system, the cholinergic neuronal pathways, the progressive neuropathological changes within the newcortex, and the brain dopamine activity.
+Eye movements and pupillary reflex have been used for several decades in neurological disease research. Careful examination of both allows to probe the medial temporal lobe memory system, the cholinergic neuronal pathways, the progressive neuropathological changes within the neocortex, and the brain dopamine activity.
 
 Below are several studies that indicate the effectiveness of using visual biomarkers for characterizing Alzheimer's disease, MCI, and controls:
 
