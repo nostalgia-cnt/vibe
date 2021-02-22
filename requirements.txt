@@ -2,6 +2,7 @@ Flask==1.1.2
 Flask-RESTful==0.3.8
 Flask-JWT==0.3.2
 Flask-SQLAlchemy==2.4.4
+flask-wtf==0.14.3
 uwsgi==2.0.19.1
 librosa==0.8.0
 moviepy==1.0.3
