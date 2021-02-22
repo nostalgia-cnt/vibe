@@ -76,3 +76,4 @@ Research papers that are useful in the space include:
 
 The most commonly used screening tools for AD diagnosis:
 * [MMSE](https://cgatoolkit.ca/Uploads/ContentDocuments/MMSE.pdf)
+* [Typical Alzheimer's diagnosis pathway](https://www.identifyalz.com/en_us/home/early-detection-and-diagnosis/early-detection-mci-alzheimers-disease.html?cid=PPC-GOOGLE-Healthcare+Industry_Testing_Diagnosis_Unbranded_Phrase~S~PH~UB~NER~HCP~CON-alzheimers+diagnosis-NA-p55497578899&gclsrc=aw.ds&&gclid=CjwKCAiAyc2BBhAaEiwA44-wW483-D4_wAXFhQQd17vU-9Em9yj_Gyqb1yY5BavaU4s1nrgkHManBBoCGNoQAvD_BwE&gclsrc=aw.ds)
