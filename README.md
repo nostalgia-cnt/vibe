@@ -83,7 +83,7 @@ It's of note that using eye tracking features for diagnosing AD can have multipl
 * <strong>Aging affects saccades</strong> - Eyesight is affecting as you age (e.g. visual acuity changes to have worse vision), as well as reaction time, and so these things may bias or confound any diagnostic marker for the eyes.
 * <strong>Less controlled setups </strong> - Many different setups can affect the recording of eye conditions including brightness, corrective lenses, orientation of the face / angle, and ambient visual noise.
 
-We hope to address these confounds with additional experiments into the future!
+We hope to address these confounds with additional experiments into the future.
 
 ## Contributors / Acknowledgements
 First, we'd like to acknowledge the [UW Center for Neurotechnology](http://www.csne-erc.org/) for putting on an awesome virtual hack-a-thon during COVID-19! Without your support none of this work would have been possible - including coordinating user interviews and giving feedback on our report structure.
