@@ -52,17 +52,15 @@ os.makedirs('published', exist_ok=True)
 
 # helper functions
 
-import matplotlib as plt
-plt.use('tkagg')
-import pylab as pl
-plt.style.use('seaborn-whitegrid')
+import matplotlib.pyplot as plt
 
 # https://jakevdp.github.io/PythonDataScienceHandbook/04.01-simple-line-plots.html
 def plot_coords(x,y, task):
-    f=pl.figure(figsize=(5, 4), dpi=100)
-    a = f.add_subplot(111)
-    a.plot(x,y)
-    a.figure.savefig(task+'.png')
+    plt.plot(x,y)
+    plt.title(task.upper()+' - X and Y coords') 
+    plt.xlabel('X coords')
+    plt.ylabel('Y coords')
+    plt.savefig(task+'.png')
 
 def get_coords(data):
     xlist=list()
