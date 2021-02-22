@@ -56,8 +56,12 @@ Proposed here are 4 explicit tasks used to baseline AD and related disorders/
 Look to the right, down, left, up, and center to help build a regression model on your own eyes using Eyegazer API.
 ### picture task
 A black and white pictures were selected to prevent color from affecting the stimulus.
+
 ### sentence reading task
-The grandfather passage is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population.
+Previous work has shown that Alzheimer's disease patients have slower reaction time and abnormal saccade movements when reading sentences and passages on a screen. 
+
+The [grandfather passage](https://www.amyspeechlanguagetherapy.com/uploads/7/5/7/4/7574967/grandfatherpassage.pdf) is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population. Therefore, we used this passage and a countdown timer to get a window into how this task may affect cognitive impairment.
+
 ### video task
 We selected a complicated video in black-and-white as a design consideration for AD and related disorders.
 
@@ -89,3 +93,6 @@ Research papers that are useful in the space include:
 The most commonly used screening tools for AD diagnosis:
 * [MMSE](https://cgatoolkit.ca/Uploads/ContentDocuments/MMSE.pdf)
 * [Typical Alzheimer's diagnosis pathway](https://www.identifyalz.com/en_us/home/early-detection-and-diagnosis/early-detection-mci-alzheimers-disease.html?cid=PPC-GOOGLE-Healthcare+Industry_Testing_Diagnosis_Unbranded_Phrase~S~PH~UB~NER~HCP~CON-alzheimers+diagnosis-NA-p55497578899&gclsrc=aw.ds&&gclid=CjwKCAiAyc2BBhAaEiwA44-wW483-D4_wAXFhQQd17vU-9Em9yj_Gyqb1yY5BavaU4s1nrgkHManBBoCGNoQAvD_BwE&gclsrc=aw.ds)
+
+Tasks:
+* [The Grandfather passage](https://www.amyspeechlanguagetherapy.com/uploads/7/5/7/4/7574967/grandfatherpassage.pdf)
