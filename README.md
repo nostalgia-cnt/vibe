@@ -54,16 +54,20 @@ Upon reviewing the literature here, we built a custom protocol with three tasks 
 Proposed here are 4 explicit tasks used to baseline AD and related disorders/
 ### baseline process
 Look to the right, down, left, up, and center to help build a regression model on your own eyes using Eyegazer API.
+![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/baseline_front.png)
 ### picture task
 A black and white pictures were selected to prevent color from affecting the stimulus.
+![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/image_front.png)
 
 ### sentence reading task
 Previous work has shown that Alzheimer's disease patients have slower reaction time and abnormal saccade movements when reading sentences and passages on a screen. 
 
 The [grandfather passage](https://www.amyspeechlanguagetherapy.com/uploads/7/5/7/4/7574967/grandfatherpassage.pdf) is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population. Therefore, we used this passage and a countdown timer to get a window into how this task may affect cognitive impairment.
 
+![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/text_front.png)
 ### video task
 We selected a complicated video in black-and-white as a design consideration for AD and related disorders.
+![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/video_front.png)
 
 ## Potential confounders
 It's of note that using eye tracking features for diagnosing AD can have multiple confounders including: 
