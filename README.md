@@ -89,8 +89,8 @@ We hope to address these confounds with additional experiments into the future.
 First, we'd like to acknowledge the [UW Center for Neurotechnology](http://www.csne-erc.org/) for putting on an awesome virtual hack-a-thon during COVID-19! Without your support none of this work would have been possible - including coordinating user interviews and giving feedback on our report structure.
 
 Second, we would like to sincerely thank the following contributors to this repository include:
-- [Jim Schwoebel](https://github.com/jim-schwoebel) - created the core survey structure / back-end in Flask/python
-- [Keaton Armentrout](https://github.com/orgs/nostalgia-cnt/people/ksarmentrout) - helped to get Eyegazer.js up-and-running / recording (through a PR)
+- [Jim Schwoebel](https://github.com/jim-schwoebel) - created the core survey structure / back-end in Flask/python.
+- [Keaton Armentrout](https://github.com/orgs/nostalgia-cnt/people/ksarmentrout) - helped to get Eyegazer.js up-and-running / recording (through a PR).
 - [Pamel Kang](https://github.com/orgs/nostalgia-cnt/people/pamelkkang) - helped to coordinate what report structures should look like / mock-ups.
 - [Jayant Arora](www.linkedin.com/in/jayant-arora-0709541b7) - helped with selection of images and other protocol design elements.
 
