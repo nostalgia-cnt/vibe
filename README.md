@@ -29,7 +29,7 @@ python3 app.py
 
 Now go to ```https://0.0.0.0:5000``` in browser and you can proceed with a demo.
 
-Note that this works best on linux operating systems and there may be some multi-threading errors on mac operating systems.
+<em>Note that this works best on linux operating systems and there may be some multi-threading errors on mac operating systems.</em>
 
 ## Demo 
 
