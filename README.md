@@ -100,7 +100,7 @@ Second, we would like to sincerely thank the following contributors to this repo
 Pull requests are welcome if you'd like to expand our work! 
 
 ## License
-The code in this repository is licensed by the [GPL3 License](https://www.gnu.org/licenses/gpl-3.0.html). Because Eyegazer.js is distributed under this license and it is incorporated, we must license it under this license (we'd prefer [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html) to make it more widely distributed but [we can't](https://softwareengineering.stackexchange.com/questions/197710/how-to-use-gpl-v3-with-apache-license-2-0#:~:text=So%20if%20the%20code%20was,used%20under%20the%20Apace%20license.)).
+The code in this repository is licensed by the [GPL3 License](https://www.gnu.org/licenses/gpl-3.0.html). Because [Webgazer.js](https://webgazer.cs.brown.edu/) is distributed under this license and it is incorporated, we must license it under this license (we'd prefer [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html) to make it more widely distributed but [we can't](https://softwareengineering.stackexchange.com/questions/197710/how-to-use-gpl-v3-with-apache-license-2-0#:~:text=So%20if%20the%20code%20was,used%20under%20the%20Apace%20license.)).
 
 Some notes:
 * [Webgazer.js](https://webgazer.cs.brown.edu/) has custom licensing, so check that out if you want to use this commercially.
