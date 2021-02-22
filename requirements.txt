@@ -5,6 +5,7 @@ Flask-SQLAlchemy==2.4.4
 flask-wtf==0.14.3
 uwsgi==2.0.19.1
 librosa==0.8.0
+matplotlib==3.3.4
 moviepy==1.0.3
 natsort==7.0.1
 image==1.5.33
@@ -12,4 +13,3 @@ pyopenssl==20.0.1
 seaborn==0.11.1
 waitress==1.4.4
 wtforms==2.3.3
-
