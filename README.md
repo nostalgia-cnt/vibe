@@ -102,4 +102,4 @@ Tasks:
 * [The Grandfather passage](https://www.amyspeechlanguagetherapy.com/uploads/7/5/7/4/7574967/grandfatherpassage.pdf)
 * [Image - rooster]()
 * [Image - tree]()
-* [Video]()
+* [Video](https://github.com/nostalgia-cnt/vibe/blob/main/static/videos/walking.mp4)
