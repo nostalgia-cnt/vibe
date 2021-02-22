@@ -73,3 +73,6 @@ Some other repositorities that you may like to look into include:
 Research papers that are useful in the space include:
 * [Review article on eye tracking research for AD](https://www.hindawi.com/journals/cmmm/2018/2676409/)
 * [Nature - eye tracking datasets](https://www.nature.com/articles/sdata2016126)
+
+The most commonly used screening tools for AD diagnosis:
+* [MMSE](https://cgatoolkit.ca/Uploads/ContentDocuments/MMSE.pdf)
