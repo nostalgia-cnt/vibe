@@ -28,6 +28,8 @@ python3 app.py
 
 Now go to 0.0.0.0:5000 in browser and proceed and can see what has been done so far.
 
+## Demo 
+
 You can watch a short demo by clicking [here](https://www.youtube.com/watch?v=_SEmT27oJOc&feature=youtu.be) or the gif below:
 
 [![Vibe demo](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/thumbnail.gif)](https://www.youtube.com/watch?v=_SEmT27oJOc&feature=youtu.be)
