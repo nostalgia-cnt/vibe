@@ -30,12 +30,10 @@ Now go to 0.0.0.0:5000 in browser and proceed and can see what has been done so 
 
 ## Problem
 
-- Alzheimer's disease affects > worldwide. 
-- The diagnosis occurs frequently at late stages of the disease, when symptoms are evident. 
-- AD is present up to 20 years before the disease is manifested. 
-- Treatment is helpful to delay the progression and improve quality of life. 
-- There is a strong need for early diagnosis to improve treatment outcomes. 
-- [MMSE exam](http://www.fammed.usouthal.edu/Guides%26JobAids/Geriatric/MMSE.pdf) is the current gold standard to diagnose MCI and dementia; it takes >50 minutes and requires an expert, which limits the ubiquity of AD screening in the population
+According to the World Health Organization (WHO), a new case of dementia is diagnosed every 3 seconds. That’s 28,800 per day or over 10 million people per year. 
+* **Late diagnosis / poor outcomes** - AD is present up to 20 years before the disease is manifested. 
+* **Early treatment** is helpful to delay the progression to improve outcomes and lower costs.
+* **Strong need** to detect AD earlier on, allowing for earlier therapies to slow decline of AD symptoms, improve treatment outcomes and ensure patients a greater quality of life.
 
 ## Eye tracking + Alzheimer's disease
 Read the review article on eye tracking research for AD [here](https://www.hindawi.com/journals/cmmm/2018/2676409/).
