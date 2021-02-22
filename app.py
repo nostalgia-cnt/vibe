@@ -42,6 +42,11 @@ app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
     '/published': app.config['PROCESSED_FOLDER'],
 })
 
+app.add_url_rule('/upload/<filename>', 'uploaded_file', build_only=True)
+app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
+    '/upload': app.config['UPLOAD_FOLDER'],
+})
+
 os.makedirs('upload', exist_ok=True)
 os.makedirs('published', exist_ok=True)
 
@@ -61,6 +66,14 @@ def plot_coords(x,y, task):
     pl.xlabel('X coordinate')
     pl.ylabel('Y coordinate')
     pl.savefig(task+'.png')
+
+def get_coords(data):
+    xlist=list()
+    ylist=list()
+    for i in range(len(data)):
+        xlist.append(data[i][0])
+        ylist.append(data[i][1])
+    return xlist, ylist
 
 # API routes
 @app.route('/', methods=['GET'])
@@ -114,13 +127,51 @@ def video_feed():
 def get_reports(sessionid):
     base_url = request.base_url.split('/report')[0]
     folder = app.config['UPLOAD_FOLDER']+'/'+sessionid
-    
     # assumes all are in listdir 
     # ['baseline.json', 'image.json', 'text.json','video.json']
     # and 
     # ['baseline.png', 'image.png', 'text.png', 'video.png']
     
-    return render_template('report.html', session=sessionid, folder=folder, url=base_url)
+    # get all the below from loadiing in the .JSON documents 
+
+    # baseline 
+    os.chdir(folder)
+    g=json.load(open('baseline.json'))
+    data=g['data']
+    xlist, ylist = get_coords(data)
+    baseline_x_avg=np.mean(xlist)
+    baseline_y_avg=np.mean(ylist)
+    baseline_x_std=np.std(xlist)
+    baseline_y_std=np.std(xlist)
+
+    # image 
+    g=json.load(open('image.json'))
+    data=g['data']
+    xlist, ylist = get_coords(data)
+    image_x_avg=np.mean(xlist)
+    image_y_avg=np.mean(ylist)
+    image_x_std=np.std(xlist)
+    image_y_std=np.std(ylist)
+
+    # video
+    g=json.load(open('video.json'))
+    data=g['data']
+    xlist, ylist = get_coords(data)
+    video_x_avg=np.mean(xlist)
+    video_y_avg=np.mean(ylist)
+    video_x_std=np.std(xlist)
+    video_y_std=np.std(ylist)
+
+    # text 
+    g=json.load(open('text.json'))
+    data=g['data']
+    xlist, ylist = get_coords(data)
+    text_x_avg=np.mean(xlist)
+    text_y_avg=np.mean(ylist)
+    text_x_std=np.std(xlist)
+    text_y_std=np.std(ylist)
+
+    return render_template('report.html', session=sessionid, folder=folder, url=base_url, baseline_x_avg=baseline_x_avg, baseline_y_avg=baseline_y_avg, baseline_x_std=baseline_x_std, baseline_y_std=baseline_y_std, image_x_avg=image_x_avg, image_y_avg=image_y_avg, image_x_std=image_x_std, image_y_std=image_y_std, video_x_avg=video_x_avg, video_y_avg=video_y_avg, video_x_std=video_x_std, video_y_std=video_y_std, text_x_avg=text_x_avg, text_y_avg=text_y_avg, text_x_std=text_x_std, text_y_std=text_y_std)
 
 @app.route('/api/<task>', methods=["POST"])
 def api_features(task):
@@ -188,7 +239,6 @@ def index():
     elif request.method == 'POST':
         age = request.form['age']
         gender = request.form['gender']
-
         return render_template('record.html', age=age, gender=gender, url=base_url)
 
 if __name__ == '__main__':
