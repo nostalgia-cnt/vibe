@@ -54,21 +54,21 @@ Below are several studies that indicate the effectiveness of using visual biomar
 ## Tasks
 Upon reviewing the literature (see above), we built a custom protocol with four tasks that matches onto oculomotor symptoms/memory deficits present in MCI and Alzheimer's disease patients. 
 
-### baseline process
+### 1. baseline process
 We created a simple baseline process for users to look to the right, down, left, up, and center to help build a regression model on your own eyes using Eyegazer API.
 
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/baseline_front.png)
 
-### picture task
+### 2. picture task
 Two black and white pictures were selected to prevent color from affecting the stimulus, and the participant is asked to focus in on the rooster.
 
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/picture_front.png)
 
-### sentence reading task
+### 3. sentence reading task
 The [grandfather passage](https://www.amyspeechlanguagetherapy.com/uploads/7/5/7/4/7574967/grandfatherpassage.pdf) is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population. Therefore, we used this passage and a countdown timer to get a window into how this task may affect cognitive impairment.
 
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/text_front.png)
-### video task
+### 4. video task
 We selected a complicated video in black-and-white as a design consideration for AD and related disorders.
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/video_front.gif)
 
