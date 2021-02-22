@@ -13,6 +13,7 @@ from wtforms import Form, TextField, TextAreaField, validators, StringField, Sub
 from flask_wtf import Form
 from wtforms import StringField, SubmitField
 from wtforms.validators import Required
+import numpy as np
 
 # def video_feed():
 # return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
@@ -44,6 +45,22 @@ app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
 os.makedirs('upload', exist_ok=True)
 os.makedirs('published', exist_ok=True)
 
+# helper functions
+
+import matplotlib.pyplot as plt
+plt.style.use('seaborn-whitegrid')
+
+# https://jakevdp.github.io/PythonDataScienceHandbook/04.01-simple-line-plots.html
+def plot_coords(x,y,  task):
+    plt.title(str(task).upper()+' TASK - X and Y coordinates')
+    plt.plot(x, y)
+    plt.savefig(task+'.png')
+    plt.xlabel('X coordinate')
+    plt.ylabel('Y coordinate')
+    plt.grid(b=None)
+    plt.close()
+
+# API routes
 @app.route('/', methods=['GET'])
 def serve_front():
     base_url = request.base_url
@@ -91,6 +108,18 @@ def video_feed():
     base_url = request.base_url
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
+@app.route('/reports/<sessionid>', methods=['GET'])
+def get_reports(sessionid):
+    base_url = request.base_url.split('/reports')[0]
+    folder = app.config['UPLOAD_FOLDER']+'/'+sessionid
+    
+    # assumes all are in listdir 
+    # ['baseline.json', 'image.json', 'text.json','video.json']
+    # and 
+    # ['baseline.png', 'image.png', 'text.png', 'video.png']
+    
+    return render_template('report.html', session=sessionid, folder=folder, url=base_url)
+
 @app.route('/api/<task>', methods=["POST"])
 def api_features(task):
     data = request.get_json()
@@ -113,7 +142,16 @@ def api_features(task):
         jsonfile.close()
     else:
         print('FILE EXISTS - ' + jsonfilename)
-        
+    
+    xy=data['data']
+    x=list()
+    y=list()
+    for j in range(len(xy)):
+        x.append(xy[j][0])
+        y.append(xy[j][1])
+    # now make a .PNG as the files come in
+    plot_coords(x,y, task)
+
     os.chdir(curdir)
 
     return jsonify(data)
