@@ -52,7 +52,7 @@ Below are several studies that indicate the effectiveness of using visual biomar
 Upon reviewing the literature here (see table below), we built a custom protocol with four tasks that matches onto oculomotor symptoms/memory deficits present in MCI and Alzheimer's disease patients. 
 
 ### baseline process
-Look to the right, down, left, up, and center to help build a regression model on your own eyes using Eyegazer API.
+We created a simple baseline process for users to look to the right, down, left, up, and center to help build a regression model on your own eyes using Eyegazer API.
 
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/baseline_front.png)
 
@@ -69,11 +69,18 @@ The [grandfather passage](https://www.amyspeechlanguagetherapy.com/uploads/7/5/7
 We selected a complicated video in black-and-white as a design consideration for AD and related disorders.
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/video_front.gif)
 
+## Reports
+After you complete all the tasks, you get a report like the one below showing your X and Y position of each task and how they compare to the average / general population.
+
+![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/report.png)
+
 ## Potential confounders
 It's of note that using eye tracking features for diagnosing AD can have multiple confounders including: 
-* <strong>Oculomotor abnormalities</strong> - Oculomotor abnormalitie may exist in other diseases and so algorithms may have false positives if these diseases are not screened out at onset of the screen (e.g. Multiple System Atrophy has slower prosaccade and increased antisaccade errors)
-* <strong>Aging affects saccades</strong> - Eyesight is affecting as you age (e.g. visual acuity changes to have worse vision), as well as reaction time, and so these things may bias or confound any diagnostic marker for the eyes; this is very similar to confounds that exist in other areas like vocal biomarker research studies.
+* <strong>Oculomotor abnormalities</strong> - Oculomotor abnormalitie may exist in other diseases and so algorithms may have false positives if these diseases are not screened out at onset of the screen (e.g. Multiple System Atrophy has slower prosaccade and increased antisaccade errors).
+* <strong>Aging affects saccades</strong> - Eyesight is affecting as you age (e.g. visual acuity changes to have worse vision), as well as reaction time, and so these things may bias or confound any diagnostic marker for the eyes.
 * <strong>Less controlled setups </strong> - Many different setups can affect the recording of eye conditions including brightness, corrective lenses, orientation of the face / angle, and ambient visual noise.
+
+We hope to address these confounds with additional experiments into the future!
 
 ## License
 The code in this repository is licensed by the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
