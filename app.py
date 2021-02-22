@@ -59,13 +59,10 @@ plt.style.use('seaborn-whitegrid')
 
 # https://jakevdp.github.io/PythonDataScienceHandbook/04.01-simple-line-plots.html
 def plot_coords(x,y, task):
-    f=pl.figure()
-    axes.plot(x,y)
-    pl.title(str(task).upper()+' TASK - X and Y coordinates')
-    pl.plot(x, y)
-    pl.xlabel('X coordinate')
-    pl.ylabel('Y coordinate')
-    pl.savefig(task+'.png')
+    f=pl.figure(figsize=(5, 4), dpi=100)
+    a = f.add_subplot(111)
+    a.plot(x,y)
+    a.figure.savefig(task+'.png')
 
 def get_coords(data):
     xlist=list()
