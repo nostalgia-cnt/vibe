@@ -60,12 +60,12 @@ It's of note that using eye tracking features for diagnosing AD can have multipl
 * <strong>Less controlled setups </strong> - Many different setups can affect the recording of eye conditions including brightness, corrective lenses, orientation of the face / angle, and ambient visual noise.
 
 ## License
-The code in this repository is licensed by the Apache 2.0 license.
+The code in this repository is licensed by the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
 
 Some notes:
 * [Eyegazer.js](https://webgazer.cs.brown.edu/) has custom licensing, so check that out if you want to use this commercially.
 * Images used in the protocol licensed under creative common license using Google search.
-* Logo was built using Inkscape and is licensed under the Apache 2.0 license.
+* Logo was built using Inkscape and is licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
 
 ## References
 Some other repositorities that you may like to look into include:
