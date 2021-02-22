@@ -98,7 +98,7 @@ The most commonly used screening tools for AD diagnosis:
 * [MMSE](https://cgatoolkit.ca/Uploads/ContentDocuments/MMSE.pdf)
 * [Typical Alzheimer's diagnosis pathway](https://www.identifyalz.com/en_us/home/early-detection-and-diagnosis/early-detection-mci-alzheimers-disease.html?cid=PPC-GOOGLE-Healthcare+Industry_Testing_Diagnosis_Unbranded_Phrase~S~PH~UB~NER~HCP~CON-alzheimers+diagnosis-NA-p55497578899&gclsrc=aw.ds&&gclid=CjwKCAiAyc2BBhAaEiwA44-wW483-D4_wAXFhQQd17vU-9Em9yj_Gyqb1yY5BavaU4s1nrgkHManBBoCGNoQAvD_BwE&gclsrc=aw.ds)
 
-Tasks:
+Tasks assets (if you want to replicate our work):
 * [The Grandfather passage](https://www.amyspeechlanguagetherapy.com/uploads/7/5/7/4/7574967/grandfatherpassage.pdf)
 * [Image - rooster](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/rooster.png)
 * [Image - tree](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/tree.png)
