@@ -52,7 +52,7 @@ Below are several studies that indicate the effectiveness of using visual biomar
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/assets/Screen%20Shot%202021-02-20%20at%205.25.43%20PM.png)
 
 ## Tasks
-Upon reviewing the literature here (see table below), we built a custom protocol with four tasks that matches onto oculomotor symptoms/memory deficits present in MCI and Alzheimer's disease patients. 
+Upon reviewing the literature (see above), we built a custom protocol with four tasks that matches onto oculomotor symptoms/memory deficits present in MCI and Alzheimer's disease patients. 
 
 ### baseline process
 We created a simple baseline process for users to look to the right, down, left, up, and center to help build a regression model on your own eyes using Eyegazer API.
