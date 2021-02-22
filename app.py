@@ -61,6 +61,7 @@ def plot_coords(x,y, task):
     plt.xlabel('X coords')
     plt.ylabel('Y coords')
     plt.savefig(task+'.png')
+    plt.close()
 
 def get_coords(data):
     xlist=list()
