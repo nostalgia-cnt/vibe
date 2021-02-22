@@ -72,7 +72,7 @@ We selected a complicated video in black-and-white as a design consideration for
 ## Reports
 After you complete all the tasks, you get a report like the one below showing your X and Y position of each task and how they compare to the average / general population.
 
-![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/report.png)
+![](https://github.com/nostalgia-cnt/vibe/blob/main/static/pictures/report_front.png)
 
 ## Potential confounders
 It's of note that using eye tracking features for diagnosing AD can have multiple confounders including: 
