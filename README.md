@@ -37,7 +37,7 @@ Now go to 0.0.0.0:5000 in browser and proceed and can see what has been done so 
 - There is a strong need for early diagnosis to improve treatment outcomes. 
 - [MMSE exam](http://www.fammed.usouthal.edu/Guides%26JobAids/Geriatric/MMSE.pdf) is the current gold standard to diagnose MCI and dementia; it takes >50 minutes and requires an expert, which limits the ubiquity of AD screening in the population
 
-## Eye tracking 
+## Eye tracking + Alzheimer's disease
 Read the review article on eye tracking research for AD [here](https://www.hindawi.com/journals/cmmm/2018/2676409/).
 
 Below are several studies that indicate the effectiveness of using visual biomarkers for characterizing Alzheimer's disease, MCI, and controls:
@@ -47,22 +47,11 @@ Below are several studies that indicate the effectiveness of using visual biomar
 ## Tasks
 Describe tasks here.
 Proposed here are 3 explicit tasks used to baseline AD and related disorders:
-- picture task 
-- sentence reading task
-- video task 
+- **picture task** - black and white pictures were selected to prevent color from affecting the stimulus 
+- **sentence reading task** - grandfather passage is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population.
+- **video task** - we selected a complicated video in black-and-white as a design consideration for AD and related disorders
 
 These tasks are elaborated upon in the demo below.
-
-### Picture task
--- black and white pictures were selected to prevent color from affecting the stimulus 
--- images licensed under creative common license using Google search
-
-### Sentence reading task
--- reading sentences has been shown to correlate with AD in the eyes and also in the voice
--- Grandfather passage is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population.
-
-### Video watch task
--- we selected a complicated video in black-and-white as a design consideration for AD and related disorders
 
 ## Potential confounders
 It's of note that using eye tracking features for diagnosing AD can have multiple confounders including: 
@@ -70,7 +59,17 @@ It's of note that using eye tracking features for diagnosing AD can have multipl
 * <strong>Aging affects saccades</strong> - Eyesight is affecting as you age (e.g. visual acuity changes to have worse vision), as well as reaction time, and so these things may bias or confound any diagnostic marker for the eyes; this is very similar to confounds that exist in other areas like vocal biomarker research studies.
 * <strong>Less controlled setups </strong> - Many different setups can affect the recording of eye conditions including brightness, corrective lenses, orientation of the face / angle, and ambient visual noise.
 
-## Additional reading 
+## License
+The code in this repository is licensed by the Apache 2.0 license.
+
+Some notes:
+* [Eyegazer.js](https://webgazer.cs.brown.edu/) has custom licensing, so check that out if you want to use this commercially.
+* Images used in the protocol licensed under creative common license using Google search.
+* Logo was built using Inkscape and is licensed under the Apache 2.0 license.
+
+## References
+Some other repositorities that you may like to look into include:
+- [eyegazer](https://github.com/brownhci/WebGazer)
 - [eyelike](https://github.com/trishume/eyeLike)
 - [pupil](https://github.com/pupil-labs/pupil)
 - [oculomatic](https://github.com/oculomatic/oculomatic-release)
