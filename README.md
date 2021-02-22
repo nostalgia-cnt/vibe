@@ -35,10 +35,14 @@ According to the World Health Organization (WHO), a new case of dementia is diag
 * **Early treatment** is helpful to delay the progression to improve outcomes and lower costs.
 * **Strong need** to detect AD earlier on, allowing for earlier therapies to slow decline of AD symptoms, improve treatment outcomes and ensure patients a greater quality of life.
 
-## Eye tracking + Alzheimer's disease
+## Solution: eye tracking biomarkers
+Eye tracking has emerged as a low-cost, noninvasive tool to diganose and track Alzheimer's disease symptoms.
+
 Below are several studies that indicate the effectiveness of using visual biomarkers for characterizing Alzheimer's disease, MCI, and controls:
 
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/assets/Screen%20Shot%202021-02-20%20at%205.25.43%20PM.png)
+
+Upon reviewing the literature here, we built a custom protocol with three tasks that matches onto oculomotor symptoms/memory deficits preseent in MCI and Alzheimer's disease patients.
 
 ## Tasks
 Describe tasks here.
