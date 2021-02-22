@@ -48,16 +48,18 @@ Below are several studies that indicate the effectiveness of using visual biomar
 
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/assets/Screen%20Shot%202021-02-20%20at%205.25.43%20PM.png)
 
+## Tasks
 Upon reviewing the literature here, we built a custom protocol with three tasks that matches onto oculomotor symptoms/memory deficits preseent in MCI and Alzheimer's disease patients.
 
-## Tasks
-Describe tasks here.
-Proposed here are 3 explicit tasks used to baseline AD and related disorders:
-- **picture task** - black and white pictures were selected to prevent color from affecting the stimulus 
-- **sentence reading task** - grandfather passage is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population.
-- **video task** - we selected a complicated video in black-and-white as a design consideration for AD and related disorders
-
-These tasks are elaborated upon in the demo below.
+Proposed here are 4 explicit tasks used to baseline AD and related disorders/
+### baseline process
+Look to the right, down, left, up, and center to help build a regression model on your own eyes using Eyegazer API.
+### picture task
+A black and white pictures were selected to prevent color from affecting the stimulus.
+#### sentence reading task
+The grandfather passage is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population.
+#### video task
+We selected a complicated video in black-and-white as a design consideration for AD and related disorders.
 
 ## Potential confounders
 It's of note that using eye tracking features for diagnosing AD can have multiple confounders including: 
