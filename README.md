@@ -28,6 +28,10 @@ python3 app.py
 
 Now go to 0.0.0.0:5000 in browser and proceed and can see what has been done so far.
 
+You can watch a short demo below:
+
+[![Vibe demo](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://www.youtube.com/watch?v=_SEmT27oJOc&feature=youtu.be)
+
 ## Problem
 
 According to the World Health Organization (WHO), a new case of dementia is diagnosed every 3 seconds. That’s 28,800 per day or over 10 million people per year. 
