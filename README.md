@@ -56,9 +56,9 @@ Proposed here are 4 explicit tasks used to baseline AD and related disorders/
 Look to the right, down, left, up, and center to help build a regression model on your own eyes using Eyegazer API.
 ### picture task
 A black and white pictures were selected to prevent color from affecting the stimulus.
-#### sentence reading task
+### sentence reading task
 The grandfather passage is a standard passage for speech-related research and covers all the major phonemes in the English language and has been proven to work on this population.
-#### video task
+### video task
 We selected a complicated video in black-and-white as a design consideration for AD and related disorders.
 
 ## Potential confounders
