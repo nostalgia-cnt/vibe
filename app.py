@@ -48,16 +48,16 @@ os.makedirs('published', exist_ok=True)
 # helper functions
 
 import matplotlib.pyplot as plt
+import seaborn as sns 
 plt.style.use('seaborn-whitegrid')
 
 # https://jakevdp.github.io/PythonDataScienceHandbook/04.01-simple-line-plots.html
-def plot_coords(x,y,  task):
+def plot_coords(x,y, task):
     plt.title(str(task).upper()+' TASK - X and Y coordinates')
     plt.plot(x, y)
     plt.savefig(task+'.png')
     plt.xlabel('X coordinate')
     plt.ylabel('Y coordinate')
-    plt.grid(b=None)
     plt.close()
 
 # API routes
