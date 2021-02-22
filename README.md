@@ -23,10 +23,13 @@ This will run everything in localhost to show you the demo:
 ```
 git clone git@github.com:nostalgia-cnt/vibe.git
 cd vibe
+pip3 install -r requirements.txt
 python3 app.py
 ```
 
-Now go to 0.0.0.0:5000 in browser and proceed and can see what has been done so far.
+Now go to ```https://0.0.0.0:5000``` in browser and you can proceed with a demo.
+
+Note that this works best on linux operating systems and there may be some multi-threading errors on mac operating systems.
 
 ## Demo 
 
