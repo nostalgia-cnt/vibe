@@ -36,8 +36,6 @@ According to the World Health Organization (WHO), a new case of dementia is diag
 * **Strong need** to detect AD earlier on, allowing for earlier therapies to slow decline of AD symptoms, improve treatment outcomes and ensure patients a greater quality of life.
 
 ## Eye tracking + Alzheimer's disease
-Read the review article on eye tracking research for AD [here](https://www.hindawi.com/journals/cmmm/2018/2676409/).
-
 Below are several studies that indicate the effectiveness of using visual biomarkers for characterizing Alzheimer's disease, MCI, and controls:
 
 ![](https://github.com/nostalgia-cnt/vibe/blob/main/assets/Screen%20Shot%202021-02-20%20at%205.25.43%20PM.png)
@@ -71,3 +69,7 @@ Some other repositorities that you may like to look into include:
 - [eyelike](https://github.com/trishume/eyeLike)
 - [pupil](https://github.com/pupil-labs/pupil)
 - [oculomatic](https://github.com/oculomatic/oculomatic-release)
+
+Research papers that are useful in the space include:
+* [Review article on eye tracking research for AD](https://www.hindawi.com/journals/cmmm/2018/2676409/)
+* [Nature - eye tracking datasets](https://www.nature.com/articles/sdata2016126)
