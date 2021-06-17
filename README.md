@@ -15,7 +15,7 @@
 
 The <strong>Vibe API</strong> is an all-purpose eye tracking web app and API for Alzheimer's disease research.
 
-This was made on behalf of the 2021 CNT Hackathon at the [UW Center for Neurotechnology](http://www.csne-erc.org/).
+This was made on behalf of the 2021 CNT Hackathon at the [UW Center for Neurotechnology](http://www.csne-erc.org/) and [received a 1st place prize](https://www.cnthackathon.org/).
 
 ## Getting started
 
